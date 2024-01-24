@@ -1,5 +1,4 @@
 
-
 // import Button from "./components/Button"
 // import Helloworld from "./component/Helloworld"
 // import Tenary from "./component/Tenary"
@@ -7,15 +6,17 @@ import Assignment from "./components/Assignment.jsx"
 import Fetch from "./components/fetch"
 import Classwork from "./components/Classwork"
 import Sportify from "./components/Sportify"
+import { Rout, Routes } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <Sportify/>
-      <Classwork/>
-      {/* <Fetch/> */}
+    <Routes>
+      <Rout path="/" element={<Fetch />} />
+    </Routes>
+      {/* <Sportify/> */}
+      {/* <Classwork/> */}
+      <Fetch/>
       {/* <Button/> */}
       {/* <Helloworld/> */}
       {/* <Tenary/> */}
